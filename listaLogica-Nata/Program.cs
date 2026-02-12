@@ -3,6 +3,8 @@
 //Lista de Exercíco Logi
 //Nivel 1: Varíaveis e Operações Básicas
 #region 1. Calculadora de Média Simples
+using System.Runtime.CompilerServices;
+
 Console.WriteLine("--- Cálculo de Média ---");
 
 Console.Write("Digite a primeira nota: ");
@@ -91,4 +93,28 @@ else
     Console.WriteLine("Negativo");
 }
 Console.ReadKey();
+#endregion
+
+#region
+
+string user = "admin";
+string password = "12345";
+
+Console.Write("Digite o usuário: ");
+string inputUser = Console.ReadLine();
+
+Console.Write("Digite sua senha: ");
+string inputPassword = Console.ReadLine();
+
+if (inputUser == user && inputPassword == password)
+{
+    Console.WriteLine("Login efetuado com sucesso!");
+}
+else
+{
+    Console.WriteLine("Usuário ou senha inválidos.");
+}
+
+Console.ReadKey();
+
 #endregion
