@@ -3,8 +3,6 @@
 //Lista de Exercíco Logi
 //Nivel 1: Varíaveis e Operações Básicas
 #region 1. Calculadora de Média Simples
-using System.Runtime.CompilerServices;
-
 Console.WriteLine("--- Cálculo de Média ---");
 
 Console.Write("Digite a primeira nota: ");
@@ -21,7 +19,7 @@ double nota4 = Convert.ToDouble(Console.ReadLine());
 
 double media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-Console.WriteLine($"Sua média é: {media:F1}");
+Console.WriteLine($"Sua média é: {media:F2}\n");
 Console.ReadKey();
 #endregion
 
@@ -31,7 +29,7 @@ Console.Write("Digite sua ideda: ");
 int idade = Convert.ToInt16(Console.ReadLine());
 
 int dias = (idade * 365);
-Console.WriteLine($"Seu dia de nascido é: {dias}");
+Console.WriteLine($"Seus dias de nascido são: {dias}\n");
 Console.ReadKey();
 
 #endregion
@@ -49,7 +47,7 @@ double variavelC = variavelA;
 variavelA = variavelB;
 variavelB = variavelC;
 
-Console.WriteLine($"Depois da troca -> variavelB: {variavelB} variavelA: {variavelA}");
+Console.WriteLine($"Depois da troca -> variavelB: {variavelB} variavelA: {variavelA}\n");
 
 Console.ReadKey();
 #endregion
@@ -62,11 +60,11 @@ int idade1 = Convert.ToInt16(Console.ReadLine());
 
 if (idade1 >= 18)
 {
-    Console.WriteLine("Entrado autorisada");
+    Console.WriteLine("Entrado autorisada\n");
 }
 else
 {
-    Console.WriteLine("Entrada não autorisada");
+    Console.WriteLine("Entrada não autorisada\n");
 }
 Console.ReadKey();
 #endregion
@@ -77,25 +75,25 @@ double numero = Convert.ToDouble(Console.ReadLine());
 
 if (numero == 0)
 {
-    Console.WriteLine("Zero");
+    Console.WriteLine("Zero\n");
 }
 
 else if (numero > 0 && numero % 2 == 0)
 {
-    Console.WriteLine("Par e positivo");
+    Console.WriteLine("Par e positivo\n");
 }
 else if (numero > 0 && numero % 2 != 0)
 {
-    Console.WriteLine("Ímpar e positivo");
+    Console.WriteLine("Ímpar e positivo\n");
 }
 else
 {
-    Console.WriteLine("Negativo");
+    Console.WriteLine("Negativo\n");
 }
-Console.ReadKey();
-#endregion
+    Console.ReadKey();
+    #endregion
 
-#region
+    #region
 
 string user = "admin";
 string password = "12345";
@@ -108,13 +106,32 @@ string inputPassword = Console.ReadLine();
 
 if (inputUser == user && inputPassword == password)
 {
-    Console.WriteLine("Login efetuado com sucesso!");
+    Console.WriteLine("Login efetuado com sucesso!\n");
 }
 else
 {
-    Console.WriteLine("Usuário ou senha inválidos.");
+    Console.WriteLine("Usuário ou senha inválidos.\n");
 }
 
+Console.ReadKey();
+
+#endregion
+
+// Nível 3: Estruturas de Repetição (Loops)
+#region 1. Contagem Regressiva
+
+Console.WriteLine("Aperte Enter para iniciar");
+Console.ReadLine();
+int number = 10;
+
+while (number >= 1)
+{
+    Console.WriteLine(number);
+    Thread.Sleep(1000);
+    number--;
+}
+
+Console.WriteLine("Lançar\n");
 Console.ReadKey();
 
 #endregion
