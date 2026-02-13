@@ -23,151 +23,150 @@
 //Console.ReadKey();
 #endregion
 #region 2. Conversor de Idade
-//Console.Write("Digite sua ideda: ");
-//int idade = Convert.ToInt16(Console.ReadLine());
+Console.Write("Digite sua ideda: ");
+int idade = Convert.ToInt16(Console.ReadLine());
 
-//int dias = (idade * 365);
-//Console.WriteLine($"Seus dias de nascido são: {dias}\n");
-//Console.ReadKey();
+int dias = (idade * 365);
+Console.WriteLine($"Seus dias de nascido são: {dias}\n");
+Console.ReadKey();
 
 #endregion
 #region 3. Troca de valores
-//double variavelA = 5689;
-//double variavelB = 1023;
+double variavelA = 5689;
+double variavelB = 1023;
 
-//Console.WriteLine($"Antes da troca -> variavelB: {variavelB} variavelA: {variavelA}\n");
+Console.WriteLine($"Antes da troca -> variavelB: {variavelB} variavelA: {variavelA}\n");
 
-//// Lógica de troca (Swap)
-//double variavelC = variavelA;
-//variavelA = variavelB;
-//variavelB = variavelC;
+double variavelC = variavelA;
+variavelA = variavelB;
+variavelB = variavelC;
 
-//Console.WriteLine($"Depois da troca -> variavelB: {variavelB} variavelA: {variavelA}\n");
+Console.WriteLine($"Depois da troca -> variavelB: {variavelB} variavelA: {variavelA}\n");
 
-//Console.ReadKey();
+Console.ReadKey();
 #endregion
 
 
 //Nivel 2: Estruturas Condicionais (if, else if, else)
 #region 1: Verificador de Maioridade
-//Console.Write("Digite sua ideda: ");
-//int idade1 = Convert.ToInt16(Console.ReadLine());
+Console.Write("Digite sua ideda: ");
+int idade1 = Convert.ToInt16(Console.ReadLine());
 
-//if (idade1 >= 18)
-//{
-//    Console.WriteLine("Entrado autorisada\n");
-//}
-//else
-//{
-//    Console.WriteLine("Entrada não autorisada\n");
-//}
-//Console.ReadKey();
+if (idade1 >= 18)
+{
+    Console.WriteLine("Entrado autorisada\n");
+}
+else
+{
+    Console.WriteLine("Entrada não autorisada\n");
+}
+Console.ReadKey();
 #endregion
 #region 2. Classificador de Número
-//Console.Write("Digite um numero: ");
-//double numero = Convert.ToDouble(Console.ReadLine());
+Console.Write("Digite um numero: ");
+double numero = Convert.ToDouble(Console.ReadLine());
 
-//if (numero == 0)
-//{
-//    Console.WriteLine("Zero\n");
-//}
+if (numero == 0)
+{
+    Console.WriteLine("Zero\n");
+}
 
-//else if (numero > 0 && numero % 2 == 0)
-//{
-//    Console.WriteLine("Par e positivo\n");
-//}
-//else if (numero > 0 && numero % 2 != 0)
-//{
-//    Console.WriteLine("Ímpar e positivo\n");
-//}
-//else
-//{
-//    Console.WriteLine("Negativo\n");
-//}
-//    Console.ReadKey();
+else if (numero > 0 && numero % 2 == 0)
+{
+    Console.WriteLine("Par e positivo\n");
+}
+else if (numero > 0 && numero % 2 != 0)
+{
+    Console.WriteLine("Ímpar e positivo\n");
+}
+else
+{
+    Console.WriteLine("Negativo\n");
+}
+Console.ReadKey();
 #endregion
 #region 3. Validação de login simples
 
-//string user = "admin";
-//string password = "12345";
+string user = "admin";
+string password = "12345";
 
-//Console.Write("Digite o usuário: ");
-//string inputUser = Console.ReadLine();
+Console.Write("Digite o usuário: ");
+string inputUser = Console.ReadLine();
 
-//Console.Write("Digite sua senha: ");
-//string inputPassword = Console.ReadLine();
+Console.Write("Digite sua senha: ");
+string inputPassword = Console.ReadLine();
 
-//if (inputUser == user && inputPassword == password)
-//{
-//    Console.WriteLine("Login efetuado com sucesso!\n");
-//}
-//else
-//{
-//    Console.WriteLine("Usuário ou senha inválidos.\n");
-//}
+if (inputUser == user && inputPassword == password)
+{
+    Console.WriteLine("Login efetuado com sucesso!\n");
+}
+else
+{
+    Console.WriteLine("Usuário ou senha inválidos.\n");
+}
 
-//Console.ReadKey();
+Console.ReadKey();
 
 #endregion
 
 // Nível 3: Estruturas de Repetição (Loops)
 #region 1. Contagem Regressiva
 
-//Console.WriteLine("Aperte Enter para iniciar");
-//Console.ReadLine();
+Console.WriteLine("Aperte Enter para iniciar a contagem regreciva em (10)");
+Console.ReadLine();
 
-//for (int i = 10 ; i >= 1; i--)
-//{
-//    Console.WriteLine(i);
-//    Thread.Sleep(1000);
-//}
+for (int i = 10; i >= 1; i--)
+{
+    Console.WriteLine(i);
+    Thread.Sleep(1000);
+}
 
-//Console.WriteLine("Lançar\n");
-//Console.ReadKey();
+Console.WriteLine("Lançar\n");
+Console.ReadKey();
 
 #endregion
 #region 2. Soma de ímpares(Loop While)
 
-//int soma = 0;
-//int numero3 = -1;
-//Console.WriteLine("Digite números inteiros (digite 0 para ver o total e sair):");
+int soma = 0;
+int numero3 = -1;
+Console.WriteLine("Digite números inteiros (digite 0 para ver o total e sair):");
 
-//while (numero3 != 0)
-//{
-//    Console.Write("Digite um número: ");
-//    numero = Convert.ToInt32(Console.ReadLine());
+while (numero3 != 0)
+{
+    Console.Write("Digite um número: ");
+    numero3 = Convert.ToInt32(Console.ReadLine());
 
-//    if (numero3 % 2 != 0)
-//    {
-//        soma += numero3;
-//    }
-//}
+    if (numero3 % 2 != 0)
+    {
+        soma += numero3;
+    }
+}
 
-//Console.WriteLine("-------------------------------------------------------");
-//Console.WriteLine($"A soma total dos números ímpares digitados é: {soma}");
-//Console.WriteLine("-------------------------------------------------------\n");
-//Console.ReadKey();
+Console.WriteLine("-------------------------------------------------------");
+Console.WriteLine($"A soma total dos números ímpares digitados é: {soma}");
+Console.WriteLine("-------------------------------------------------------\n");
+Console.ReadKey();
 #endregion
 
 #region 3. Tabuada Personalizada
 
-//Console.Write("Digite um numero: ");
-//int numero4 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Tabuada. Digite um numero: ");
+int numero4 = Convert.ToInt32(Console.ReadLine());
 
-//for (int i = 1; i <= 10; i++)
-//{
-//    int tabuada = numero4 * i;
-//    Console.WriteLine($"{numero4} x {i} = {tabuada}");
-//}
-//Console.ReadKey();
+for (int i = 1; i <= 10; i++)
+{
+    int tabuada = numero4 * i;
+    Console.WriteLine($"{numero4} x {i} = {tabuada}");
+}
+Console.ReadKey();
 #endregion
 
-//Nível 4 Coleção (Arrays e Listas)
+////Nível 4 Coleção (Arrays e Listas)
 #region 1. Inversão de Array
 
-String[] nomes = {"Ana Paula", "Carlos", "Romulo", "Joana", "Maria" };
+String[] nomes = { "Ana Paula", "Carlos", "Romulo", "Joana", "Maria" };
 
-Console.WriteLine("Ordem original");
+Console.WriteLine("\nOrdem original");
 foreach (string nome in nomes)
 {
     Console.WriteLine(nome);
@@ -175,11 +174,46 @@ foreach (string nome in nomes)
 
 Array.Reverse(nomes);
 
-Console.WriteLine("\nOrdem invertida");
+Console.WriteLine("\nOrdem invertida\n");
 foreach (string nome in nomes)
 {
     Console.WriteLine(nome);
 }
+
+Console.ReadKey();
+#endregion
+
+
+#region Busca e contagem em lista (foreach)
+
+List<string> cores = new List<string>
+{
+            "Amarelo", "Azul", "Verde", "Rosa", "Amarelo", "Azul",
+            "Preto", "Azul", "Marrom", "Azul", "Ciano",
+            "Amarelo", "Azul", "Verde", "Branco", "Rosa", "Azul"
+};
+
+Console.WriteLine("\nLista de cores:");
+foreach (string cor in cores)
+{
+   Console.WriteLine(cor);
+}
+
+Console.Write("\nDigite uma cor para buscar: ");
+string corBusca = Console.ReadLine();
+
+int contador = 0;
+
+foreach (string cor in cores)
+{
+   if (cor.Equals(corBusca, StringComparison.OrdinalIgnoreCase))
+   {
+      contador++;
+   }
+}
+Console.Write("--------------------------------------------------------------");
+Console.WriteLine($"\nA cor '{corBusca}' aparece {contador} vez(es) na lista.");
+Console.Write("--------------------------------------------------------------");
 
 Console.ReadKey();
 #endregion
