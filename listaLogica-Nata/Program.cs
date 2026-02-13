@@ -3,24 +3,24 @@
 //Lista de Exercíco Logi
 //Nivel 1: Varíaveis e Operações Básicas
 #region 1. Calculadora de Média Simples
-//Console.WriteLine("--- Cálculo de Média ---");
+Console.WriteLine("--- Cálculo de Média ---");
 
-//Console.Write("Digite a primeira nota: ");
-//double nota1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Digite a primeira nota: ");
+double nota1 = Convert.ToDouble(Console.ReadLine());
 
-//Console.Write("Digite a segunda nota: ");
-//double nota2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Digite a segunda nota: ");
+double nota2 = Convert.ToDouble(Console.ReadLine());
 
-//Console.Write("Digite a terceira nota: ");
-//double nota3 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Digite a terceira nota: ");
+double nota3 = Convert.ToDouble(Console.ReadLine());
 
-//Console.Write("Digite a quarta nota: ");
-//double nota4 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Digite a quarta nota: ");
+double nota4 = Convert.ToDouble(Console.ReadLine());
 
-//double media = (nota1 + nota2 + nota3 + nota4) / 4;
+double media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-//Console.WriteLine($"Sua média é: {media:F2}\n");
-//Console.ReadKey();
+Console.WriteLine($"Sua média é: {media:F2}\n");
+Console.ReadKey();
 #endregion
 #region 2. Conversor de Idade
 Console.Write("Digite sua ideda: ");
