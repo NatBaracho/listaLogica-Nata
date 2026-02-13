@@ -128,28 +128,36 @@
 #endregion
 #region 2. Soma de ímpares(Loop While)
 
-int soma = 0;
-int numero = -1;
-Console.WriteLine("Digite números inteiros (digite 0 para ver o total e sair):");
+//int soma = 0;
+//int numero3 = -1;
+//Console.WriteLine("Digite números inteiros (digite 0 para ver o total e sair):");
 
-while (numero != 0)
-{
-    Console.Write("Digite um número: ");
-    numero = Convert.ToInt32(Console.ReadLine());
+//while (numero3 != 0)
+//{
+//    Console.Write("Digite um número: ");
+//    numero = Convert.ToInt32(Console.ReadLine());
 
-    if (numero % 2 != 0)
-    {
-        soma += numero;
-    }
-}
+//    if (numero3 % 2 != 0)
+//    {
+//        soma += numero3;
+//    }
+//}
 
-Console.WriteLine("-------------------------------------------------------");
-Console.WriteLine($"A soma total dos números ímpares digitados é: {soma}");
-Console.WriteLine("-------------------------------------------------------\n");
-Console.ReadKey();
+//Console.WriteLine("-------------------------------------------------------");
+//Console.WriteLine($"A soma total dos números ímpares digitados é: {soma}");
+//Console.WriteLine("-------------------------------------------------------\n");
+//Console.ReadKey();
 #endregion
 
 #region 3. Tabuada Personalizada
 
+Console.WriteLine("Digite um numero");
+int numero4 = Convert.ToInt32(Console.ReadLine());
 
+for (int i = 1; i <= 10; i++)
+{
+    int tabuada = numero4 * i;
+    Console.WriteLine($"{numero4} x {i} = {tabuada}");
+}
 #endregion
+
