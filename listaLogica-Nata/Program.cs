@@ -151,13 +151,35 @@
 
 #region 3. Tabuada Personalizada
 
-Console.WriteLine("Digite um numero");
-int numero4 = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Digite um numero: ");
+//int numero4 = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 1; i <= 10; i++)
-{
-    int tabuada = numero4 * i;
-    Console.WriteLine($"{numero4} x {i} = {tabuada}");
-}
+//for (int i = 1; i <= 10; i++)
+//{
+//    int tabuada = numero4 * i;
+//    Console.WriteLine($"{numero4} x {i} = {tabuada}");
+//}
+//Console.ReadKey();
 #endregion
 
+//Nível 4 Coleção (Arrays e Listas)
+#region 1. Inversão de Array
+
+String[] nomes = {"Ana Paula", "Carlos", "Romulo", "Joana", "Maria" };
+
+Console.WriteLine("Ordem original");
+foreach (string nome in nomes)
+{
+    Console.WriteLine(nome);
+}
+
+Array.Reverse(nomes);
+
+Console.WriteLine("\nOrdem invertida");
+foreach (string nome in nomes)
+{
+    Console.WriteLine(nome);
+}
+
+Console.ReadKey();
+#endregion
