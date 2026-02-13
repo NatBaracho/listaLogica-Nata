@@ -3,135 +3,153 @@
 //Lista de Exercíco Logi
 //Nivel 1: Varíaveis e Operações Básicas
 #region 1. Calculadora de Média Simples
-Console.WriteLine("--- Cálculo de Média ---");
+//Console.WriteLine("--- Cálculo de Média ---");
 
-Console.Write("Digite a primeira nota: ");
-double nota1 = Convert.ToDouble(Console.ReadLine());
+//Console.Write("Digite a primeira nota: ");
+//double nota1 = Convert.ToDouble(Console.ReadLine());
 
-Console.Write("Digite a segunda nota: ");
-double nota2 = Convert.ToDouble(Console.ReadLine());
+//Console.Write("Digite a segunda nota: ");
+//double nota2 = Convert.ToDouble(Console.ReadLine());
 
-Console.Write("Digite a terceira nota: ");
-double nota3 = Convert.ToDouble(Console.ReadLine());
+//Console.Write("Digite a terceira nota: ");
+//double nota3 = Convert.ToDouble(Console.ReadLine());
 
-Console.Write("Digite a quarta nota: ");
-double nota4 = Convert.ToDouble(Console.ReadLine());
+//Console.Write("Digite a quarta nota: ");
+//double nota4 = Convert.ToDouble(Console.ReadLine());
 
-double media = (nota1 + nota2 + nota3 + nota4) / 4;
+//double media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-Console.WriteLine($"Sua média é: {media:F2}\n");
-Console.ReadKey();
+//Console.WriteLine($"Sua média é: {media:F2}\n");
+//Console.ReadKey();
 #endregion
-
-// Converter Idade
 #region 2. Conversor de Idade
-Console.Write("Digite sua ideda: ");
-int idade = Convert.ToInt16(Console.ReadLine());
+//Console.Write("Digite sua ideda: ");
+//int idade = Convert.ToInt16(Console.ReadLine());
 
-int dias = (idade * 365);
-Console.WriteLine($"Seus dias de nascido são: {dias}\n");
-Console.ReadKey();
+//int dias = (idade * 365);
+//Console.WriteLine($"Seus dias de nascido são: {dias}\n");
+//Console.ReadKey();
 
 #endregion
-
-// Troca de Valore
-
 #region 3. Troca de valores
-double variavelA = 5689;
-double variavelB = 1023;
+//double variavelA = 5689;
+//double variavelB = 1023;
 
-Console.WriteLine($"Antes da troca -> variavelB: {variavelB} variavelA: {variavelA}\n");
+//Console.WriteLine($"Antes da troca -> variavelB: {variavelB} variavelA: {variavelA}\n");
 
-// Lógica de troca (Swap)
-double variavelC = variavelA;
-variavelA = variavelB;
-variavelB = variavelC;
+//// Lógica de troca (Swap)
+//double variavelC = variavelA;
+//variavelA = variavelB;
+//variavelB = variavelC;
 
-Console.WriteLine($"Depois da troca -> variavelB: {variavelB} variavelA: {variavelA}\n");
+//Console.WriteLine($"Depois da troca -> variavelB: {variavelB} variavelA: {variavelA}\n");
 
-Console.ReadKey();
+//Console.ReadKey();
 #endregion
 
 
 //Nivel 2: Estruturas Condicionais (if, else if, else)
 #region 1: Verificador de Maioridade
-Console.Write("Digite sua ideda: ");
-int idade1 = Convert.ToInt16(Console.ReadLine());
+//Console.Write("Digite sua ideda: ");
+//int idade1 = Convert.ToInt16(Console.ReadLine());
 
-if (idade1 >= 18)
-{
-    Console.WriteLine("Entrado autorisada\n");
-}
-else
-{
-    Console.WriteLine("Entrada não autorisada\n");
-}
-Console.ReadKey();
+//if (idade1 >= 18)
+//{
+//    Console.WriteLine("Entrado autorisada\n");
+//}
+//else
+//{
+//    Console.WriteLine("Entrada não autorisada\n");
+//}
+//Console.ReadKey();
 #endregion
-
 #region 2. Classificador de Número
-Console.Write("Digite um numero: ");
-double numero = Convert.ToDouble(Console.ReadLine());
+//Console.Write("Digite um numero: ");
+//double numero = Convert.ToDouble(Console.ReadLine());
 
-if (numero == 0)
-{
-    Console.WriteLine("Zero\n");
-}
+//if (numero == 0)
+//{
+//    Console.WriteLine("Zero\n");
+//}
 
-else if (numero > 0 && numero % 2 == 0)
-{
-    Console.WriteLine("Par e positivo\n");
-}
-else if (numero > 0 && numero % 2 != 0)
-{
-    Console.WriteLine("Ímpar e positivo\n");
-}
-else
-{
-    Console.WriteLine("Negativo\n");
-}
-    Console.ReadKey();
-    #endregion
+//else if (numero > 0 && numero % 2 == 0)
+//{
+//    Console.WriteLine("Par e positivo\n");
+//}
+//else if (numero > 0 && numero % 2 != 0)
+//{
+//    Console.WriteLine("Ímpar e positivo\n");
+//}
+//else
+//{
+//    Console.WriteLine("Negativo\n");
+//}
+//    Console.ReadKey();
+#endregion
+#region 3. Validação de login simples
 
-    #region
+//string user = "admin";
+//string password = "12345";
 
-string user = "admin";
-string password = "12345";
+//Console.Write("Digite o usuário: ");
+//string inputUser = Console.ReadLine();
 
-Console.Write("Digite o usuário: ");
-string inputUser = Console.ReadLine();
+//Console.Write("Digite sua senha: ");
+//string inputPassword = Console.ReadLine();
 
-Console.Write("Digite sua senha: ");
-string inputPassword = Console.ReadLine();
+//if (inputUser == user && inputPassword == password)
+//{
+//    Console.WriteLine("Login efetuado com sucesso!\n");
+//}
+//else
+//{
+//    Console.WriteLine("Usuário ou senha inválidos.\n");
+//}
 
-if (inputUser == user && inputPassword == password)
-{
-    Console.WriteLine("Login efetuado com sucesso!\n");
-}
-else
-{
-    Console.WriteLine("Usuário ou senha inválidos.\n");
-}
-
-Console.ReadKey();
+//Console.ReadKey();
 
 #endregion
 
 // Nível 3: Estruturas de Repetição (Loops)
 #region 1. Contagem Regressiva
 
-Console.WriteLine("Aperte Enter para iniciar");
-Console.ReadLine();
-int number = 10;
+//Console.WriteLine("Aperte Enter para iniciar");
+//Console.ReadLine();
 
-while (number >= 1)
+//for (int i = 10 ; i >= 1; i--)
+//{
+//    Console.WriteLine(i);
+//    Thread.Sleep(1000);
+//}
+
+//Console.WriteLine("Lançar\n");
+//Console.ReadKey();
+
+#endregion
+#region 2. Soma de ímpares(Loop While)
+
+int soma = 0;
+int numero = -1;
+Console.WriteLine("Digite números inteiros (digite 0 para ver o total e sair):");
+
+while (numero != 0)
 {
-    Console.WriteLine(number);
-    Thread.Sleep(1000);
-    number--;
+    Console.Write("Digite um número: ");
+    numero = Convert.ToInt32(Console.ReadLine());
+
+    if (numero % 2 != 0)
+    {
+        soma += numero;
+    }
 }
 
-Console.WriteLine("Lançar\n");
+Console.WriteLine("-------------------------------------------------------");
+Console.WriteLine($"A soma total dos números ímpares digitados é: {soma}");
+Console.WriteLine("-------------------------------------------------------\n");
 Console.ReadKey();
+#endregion
+
+#region 3. Tabuada Personalizada
+
 
 #endregion
