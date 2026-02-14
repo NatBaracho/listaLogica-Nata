@@ -86,7 +86,7 @@
 git clone git@github.com:NatBaracho/listaLogica-Nata.git
 
 # Acesse a pasta do exercício desejado
-cd listaLogica-Nata
+cd listaLogica-Nata/Program.cs
 
 # Execute o projeto
 dotnet run
